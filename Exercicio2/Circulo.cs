@@ -17,17 +17,17 @@ namespace Exercicio2
         }
 
         public double calculaAreaC(){
-            return 3.14 * (this.raio * this.raio);
+            return System.Math.PI * System.Math.Pow(this.raio,2);
 
         }
 
         public double calculaAreaQ(){
-            return this.raio;
+            return 0;
 
         }
 
         public double calculaAreaR(){
-            return this.raio;
+            return 0;
 
         }
 

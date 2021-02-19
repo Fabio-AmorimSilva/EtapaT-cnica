@@ -18,17 +18,17 @@ namespace Exercicio2
         }
 
         public double calculaAreaQ(){
-            return this.lado * this.lado;
+            return System.Math.Pow(this.lado,2);
 
         }
 
         public double calculaAreaC(){
-            return this.lado;
+            return 0;
 
         }
 
         public double calculaAreaR(){
-            return this.lado;
+            return 0;
 
         }
 

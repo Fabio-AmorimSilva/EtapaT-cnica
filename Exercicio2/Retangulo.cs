@@ -2,6 +2,7 @@ namespace Exercicio2
 {
     public class Retangulo : AreaCalculavel
     {
+         
 
         private double lado{get; set;}
 
@@ -13,18 +14,31 @@ namespace Exercicio2
 
         }
 
+        public double Lado{
+            get => this.lado;
+            set => this.lado = value;
+
+        }
+
+        public double Altura{
+            get => this.altura;
+            set => this.altura = value;
+
+        }
+
+
         public double calculaAreaR(){
             return this.lado * this.altura;
 
         }
 
         public double calculaAreaQ(){
-            return this.lado;
+            return 0;
 
         }
 
         public double calculaAreaC(){
-            return this.lado;
+            return 0;
 
         }
         
