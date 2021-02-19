@@ -32,7 +32,7 @@ namespace Exercicio1
             }
 
             
-            Console.WriteLine("Digite o fim do intervaldo de mltiplicação: ");
+            Console.WriteLine("Digite o fim do intervaldo de multiplicação: ");
             fim = int.Parse(Console.ReadLine());
 
             if(fim < 0 || fim > 3000){
@@ -43,12 +43,12 @@ namespace Exercicio1
             }
 
             if(inicio > fim){
-                Console.WriteLine("O inicio não pode ser maior que o final.");
+                Console.WriteLine("O inicio do intervalo não pode ser maior que o final do mesmo.");
                 Console.WriteLine("Tente novamente");
                 return;
 
             }else if(fim - inicio >= 10){
-                Console.WriteLine("O intervalor de multiplicação não pode ser maior que  ou igual a 10.");
+                Console.WriteLine("O intervalor de multiplicação não pode ser maior que ou igual a 10.");
                 Console.WriteLine("Tente novamente");
                 return;
             }
