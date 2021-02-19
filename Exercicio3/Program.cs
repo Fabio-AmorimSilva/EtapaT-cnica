@@ -18,14 +18,15 @@ namespace Exercicio3
 
             Console.WriteLine("Digite o número 1 e número 2 para realizar as quatro opeações fundamentais ->");
             Console.WriteLine("Soma, Subtração, Multiplicação e Divisão.");
+            Console.WriteLine("O números serão calculados na sequência. (num1 + num2), (num1 - num2), (num1 * num2) e (num1 / num2)");
             num1 = double.Parse(Console.ReadLine());
             num2 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Resultados das opeações.");
-            Console.WriteLine("Soma: " + soma.efetuarOperacao(num1,num2));
-            Console.WriteLine("Subtração: " + subtracao.efetuarOperacao(num1,num2));
-            Console.WriteLine("Multiplicação: " + multiplicacao.efetuarOperacao(num1,num2));
-            Console.WriteLine("Divisão: " + divisao.efetuarOperacao(num1,num2));
+            Console.WriteLine("Soma: " + String.Format("{0:00.00}", soma.efetuarOperacao(num1,num2)));
+            Console.WriteLine("Subtração: " + String.Format("{0:00.00}", subtracao.efetuarOperacao(num1,num2)));
+            Console.WriteLine("Multiplicação: " + String.Format("{0:00.00}", multiplicacao.efetuarOperacao(num1,num2)));
+            Console.WriteLine("Divisão: " + String.Format("{0:00.00}", divisao.efetuarOperacao(num1,num2)));
 
 
 
